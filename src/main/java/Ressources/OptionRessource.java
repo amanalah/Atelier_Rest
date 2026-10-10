@@ -22,10 +22,10 @@ public class OptionRessource {
     @Path("{code}")
     @Produces(MediaType.APPLICATION_JSON)
     public Response getOptionByCode(@PathParam("code")int code){
-        return Response.status(Response.Status.CREATED)
-                        .entity(optionBusiness.getOptionByCode(code))
-                        .build();
-                //optionBusiness.getOptionByCode(code);
+        return Response.status(Response.Status.OK)
+                .entity(optionBusiness.getOptionByCode(code))
+                .build();
+        //optionBusiness.getOptionByCode(code);
     }
     @POST
     @Path("")

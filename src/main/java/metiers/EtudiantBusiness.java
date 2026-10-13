@@ -8,6 +8,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class EtudiantBusiness {
+
     private static List<Etudiant> etudiants;
     private OptionBusiness optionBusiness = new OptionBusiness();
 

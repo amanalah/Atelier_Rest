@@ -48,7 +48,7 @@ public class Etudiant {
         this.prenom = prenom;
     }
 
-    @XmlTransient
+   // @XmlTransient    //supprimer pour ne pas avoir 405!
     public Option getOption() {
         return option;
     }
